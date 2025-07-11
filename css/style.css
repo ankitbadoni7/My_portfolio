@@ -11,7 +11,7 @@
 
 body{
     font-family:'Poppins',sans-serif /*sans serif is fallback font in case poppins is not workingprperly*/;
-  
+
 }
 
 html{
@@ -708,15 +708,13 @@ footer .copyright{
             width: 50%;
         }
         .experience .card-container .experience-card .front ul {
-            width: 100%;
+            
         }
-        .about .container img{
-            width:70%;
+        .about .container .ab-img{
+            width:80%;
             min-height:5rem;
         }
-          .about-me-img{
-            margin-left: 2rem;
-         }
+        
         
  }
 
