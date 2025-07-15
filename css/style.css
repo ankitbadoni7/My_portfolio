@@ -11,11 +11,15 @@
 
 body{
     font-family:'Poppins',sans-serif /*sans serif is fallback font in case poppins is not workingprperly*/;
-
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+     overflow-x: hidden;
 }
 
 html{
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    
 }
 
 /* changing defualt prop of browser*/
@@ -24,27 +28,29 @@ html{
     margin:0;
     box-sizing: border-box;
     -webkit-font-smoothing:antialiased;  /* for font smoothing*/
+    -moz-osx-font-smoothing: grayscale;
 }
 
 header{
     background :var(--dark);
     position:relative;
     max-width: 100%;
-    height: 150px;
+    height: 5rem;
 }
 
-header nav {
-    padding: 1rem 3rem; /* 1rem= 16px*/
+header .nav {
+    padding: rem 3rem; /* 1rem= 16px*/
     position: fixed;
     background-color: var(--dark);
     width: 100%;
-    z-index: 1000;
-    height: 6rem;
+    z-index: 100;
+    height: 5rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    gap: 40rem;
+    gap: 13%;
+    flex-wrap: nowrap;
 }
 
-header nav .left a{
+header .nav .left a{
     color:var(--pure);
     text-decoration: none; /*for removing underlines in nav link*/
     margin-right:2rem;  /*links ke beech me sapce*/
@@ -63,11 +69,12 @@ header nav .left a:hover{
 
 header nav .logo{ /*logo and link ke beech space*/
     margin-right:3rem;
+    margin-left: 1rem;
 }
 .logo {
     font-family: "Bytesized", sans-serif;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 30px;
     color: var(--light);
     animation: glow 0.7s infinite alternate;
     cursor: pointer;
@@ -95,25 +102,20 @@ header nav .logo{ /*logo and link ke beech space*/
 
 .hero{
     width:100%;
-    padding:0rem 0;  /*top-bottom 0 and 15px left-right*/
+    padding:0 0;  /*top-bottom 0 and 15px left-right*/
     margin:0 auto;  /*same as above*/
     clip-path:polygon(0 0, 100% 0, 100% 100%, 80% 80%, 0 100%); /*(x y)*/
     background: var(--dark);
-    
 }
-.container{
-    width:1152px;
-    padding:0 15px;  /*top-bottom 0 and 15px left-right*/
-    margin:0 auto;  /*same as above*/
+.hero .left{
+    margin-left: 6rem ;
 }
-
-
-
 .hero .left img{
-   max-width: 55rem;
-   margin-left: 20rem;
-   
+    display: block;
+    width: 20rem;
+    margin-top: 5rem;
 }
+
 .hero .right{
     color:var(--pure);
     margin-right:2rem; 
@@ -142,7 +144,7 @@ header nav .logo{ /*logo and link ke beech space*/
     white-space: pre-line; /*prelie pro for as it is text*/
 }
 .hero .right {
-    margin-bottom:15rem;
+    margin-bottom:10rem;
 }
 
 
@@ -151,6 +153,12 @@ header nav .logo{ /*logo and link ke beech space*/
 section{
     padding:15rem 0;
 }
+.container{
+    width:1152px;
+    padding:0 15px;  /*top-bottom 0 and 15px left-right*/
+    margin:0 auto;  /*same as above*/
+}
+
 
 section.about .about-me-img{
     height:450px;
@@ -660,18 +668,49 @@ footer .copyright{
 
 @media (max-width: 1640px) {
     header nav  {
-        gap: 20rem;
+        gap: 2rem;
     }
     .hero{
         gap: 10rem;
+        padding-top: 0rem;
+        width: 100%;
     }
     .hero .left img{
         margin-left: 2rem;
     }
-   
 }
 
-@media (max-width:1336px) {
+/* @media(min-width:1536px){
+     .hero .right {
+         margin-bottom: 0rem;
+         margin-top: 0rem;
+    }
+    .hero .right h6,span{
+        font-size: 0.9rem;
+        margin-bottom: 0rem;
+    }
+    .hero .right h1{
+        font-size: 0.9rem;
+    }
+     .hero .right p{
+        font-size: 0.5rem;
+        margin-top: 0rem;
+    }
+
+        .hero .left img{
+            width: 50%;
+            margin-left: 20%;
+            
+        }
+        .hero{
+            max-height: 30rem;
+            clip-path:polygon(0 0, 100% 0, 100% 100%, 80% 95%, 0 100%); /*(x y)*/
+        
+
+
+
+
+@media (max-width:1055px) {
     header #main-nav{
         display: none;
     }
@@ -741,20 +780,20 @@ footer .copyright{
   } 
 
 
-  @media(max-width:885px){
-        header{
-            background-color: var(--dark);
-            
-        }
+  @media(max-width:912px){
         .hero{
             gap: 10rem;
-            height: 50rem;
+            height: 45rem;
             padding-top: 10rem;
-
         }
-
+        .hero .left{
+            margin-left: 0rem;
+        }
+        .hero .left{
+            width: 10%;
+        }
     .hero .right .btn{ /*for resume button*/
-        padding: 0.8rem 1rem;
+        padding: 0.8rem 0.5rem;
     }
     
     .experience .card-container{
@@ -768,7 +807,9 @@ footer .copyright{
         gap: 15rem;
         clip-path:polygon(0 0, 100% 0, 100% 100%, 80% 95%, 0 100%); /*(x y)*/
     }
-    
+    .hero .left img{
+        width: 150%;
+    }
     .hero .right{
         margin-top: 2rem;
      
