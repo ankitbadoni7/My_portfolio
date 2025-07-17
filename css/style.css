@@ -756,6 +756,11 @@ footer .copyright{
         
         
  }
+ @media(max-width:450px){
+        .about .container .ab-img img{
+            height: 20rem;
+        }
+ }
 
   
    @media (max-width: 768px) {
@@ -814,9 +819,9 @@ footer .copyright{
         margin-top: 2rem;
      
     }
-    .hero .right .resbutton{
-        margin-top: 3rem;
-    }
+  .hero .right .btn{ /*for resume button*/
+        padding: 0.8rem 0.5rem;
+  }
     .about .container {
      flex-direction: column;
      gap: 5rem;
