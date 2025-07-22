@@ -108,7 +108,7 @@ header nav .logo{ /*logo and link ke beech space*/
     background: var(--dark);
 }
 .hero .left{
-    margin-left: 6rem ;
+    margin-left: 8rem ;
 }
 .hero .left img{
     display: block;
@@ -118,7 +118,7 @@ header nav .logo{ /*logo and link ke beech space*/
 
 .hero .right{
     color:var(--pure);
-    margin-right:2rem; 
+    margin-right:5rem; 
 }
 .hero .right h6{
     font-size:1.9rem;
