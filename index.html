@@ -12,52 +12,46 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-
 </head>
 
 <body>
 
     <div class="site-main-wrapper">
         <div class="mobicon">
-            <button id="mobtheme" class=" mobtheme btn "></button>
+            <button id="mobtheme" class="mobtheme btn" aria-label="Toggle Mobile Theme"></button>
             <button class="hamberger">
-                <img src="images/hamberger.svg" alt="">
+                <img src="images/hamberger.svg" alt="Hamburger Menu Icon">
             </button>
         </div>
 
         <div class="mobile-nav">
-            <button class="cross"><img src="images/cross.svg" alt=""></button>
+            <button class="cross"><img src="images/cross.svg" alt="Close Menu Button"></button>
             <ul>
                 <li><a href="#">Home</a> </li>
                 <li><a href="#about">About</a> </li>
                 <li><a href="#skills">Skills</a> </li>
+                <li><a href="#projects">Projects</a> </li>
                 <li><a href="#experience">Work Experience</a> </li>
             </ul>
         </div>
 
         <header>
-
             <nav id="main-nav" class="nav flex justify-center items-center">
 
                 <div class="left flex justify-center items-center ">
-                    <div class="logo ">
-                        AB
-                    </div>
+                    <div class="logo ">AB</div>
                     <div>
                         <a href="#">Home</a>
                         <a href="#about">About</a>
                         <a href="#skills">Skills</a>
-                        <a href="#experience">work experience</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#experience">Work Experience</a>
                     </div>
                 </div>
                 <div class="right flex justify-center items-center">
-                    <!-- btn  and btn-primary is utility class like bootstrap -->
                     <a href="#contact" class="btn btn-primary ">Contact</a>
-
-
                     <div class="theme">
-                        <button id="theme-toggle" class="btn "></button>
+                        <button id="theme-toggle" class="btn" aria-label="Toggle Theme"></button>
                     </div>
                 </div>
 
@@ -67,7 +61,7 @@
         <div class="hero flex items-center justify-center">
             <div class="particle"></div>
             <div class="left flex-1">
-                <img src="./images/myPic.png" alt="">
+                <img src="./images/myPic.png" alt="Ankit Badoni Portrait">
             </div>
             <div class="right flex-1  items-center">
                 <h6>Ankit Badoni</h6>
@@ -77,46 +71,42 @@
                         <span class="auto-type"></span>
                     </div>
                 </h1>
-                <p> MCA graduate passionate about web development and
-                    emerging technologies, with a strong drive to learn and grow.</p>
+                <p>MCA graduate passionate about web development and emerging technologies, with a strong drive to learn
+                    and grow.</p>
                 <div class="resbutton">
-                    <a href="Docs/ankit_badoni_resume.pdf" target="_blank" class="btn btn-secondary">DOWNLOAD RESUME
-                        ⬇️</a>
+                    <a href="Docs/ankit_badoni_resume.pdf" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-secondary">DOWNLOAD RESUME ⬇️</a>
                 </div>
             </div>
         </div>
 
-
-
         <section id="about" class="about">
             <div class="container flex items-center">
-                <div class=" ab-img flex-1">
-                    <img class="about-me-img" src="./images/myPic2.jpg" alt="">
+                <div class="ab-img flex-1">
+                    <img class="about-me-img" src="./images/mypic3.jpeg" alt="Ankit Badoni About Me">
                 </div>
                 <div class="flex-1 right">
                     <h1>About <span>Me</span></h1>
                     <h3>Hello! I’m Ankit Badoni.</h3>
                     <p>An MCA graduate with a strong foundation in Java, SQL, HTML, and CSS.
                         I am passionate about software development and eager to apply my skills in a professional
-                        environment.
-                        Previously, I worked as a Retail Cashier at Lifestyle International Pvt. Ltd., gaining
-                        experience in customer service and teamwork.
-                        I have also developed a personal portfolio website to showcase my skills.
-                        Always eager to learn, I aim to grow as a Software Engineer and contribute effectively to the
-                        industry
+                        environment. Worked as a Backend Support Engineer (Store Operations) at Lifestyle International
+                        Pvt. Ltd., Dehradun (Dec 2022 – Jul 2023),
+                        managing backend POS database operations using SQL and resolving cashier-level issues.
+                        Coordinated with operations teams to ensure smooth store functioning.
+                        Additionally, I developed a personal portfolio website to showcase my skills and aspire to grow
+                        as a Software Engineer.
                     </p>
 
                     <div class="social">
-                        <a href="https://www.linkedin.com/in/ankitbadoni7/" target="_blank"><img
-                                src="./images/linkedin.svg" alt=""></a>
-                        <a href="https://github.com/ankitbadoni7" target="_blank"><img src="./images/github.svg"
-                                alt=""></a>
-                        <a href="https://www.instagram.com/mr.ab.in?igsh=MTdhd2ZvOXF0cmo2ZA%3D%3D" target="_blank"><img
-                                src="./images/instagram.svg" alt=""></a>
-                        <a href="https://www.behance.net/ankitbadoni3/projects" target="_blank"><img
-                                src="./images/behance.svg" alt=""></a>
-
-
+                        <a href="https://www.linkedin.com/in/ankitbadoni7/" target="_blank"
+                            rel="noopener noreferrer"><img src="./images/linkedin.svg" alt="LinkedIn Icon"></a>
+                        <a href="https://github.com/ankitbadoni7" target="_blank" rel="noopener noreferrer"><img
+                                src="./images/github.svg" alt="GitHub Icon"></a>
+                        <a href="https://www.instagram.com/mr.ab.in?igsh=MTdhd2ZvOXF0cmo2ZA%3D%3D" target="_blank"
+                            rel="noopener noreferrer"><img src="./images/instagram.svg" alt="Instagram Icon"></a>
+                        <a href="https://www.behance.net/ankitbadoni3/projects" target="_blank"
+                            rel="noopener noreferrer"><img src="./images/behance.svg" alt="Behance Icon"></a>
                     </div>
                 </div>
             </div>
@@ -124,114 +114,129 @@
 
         <section id="skills" class="skills">
             <div class="container">
-                <h2 class="skill-heading">Skills & Technologies</h2> <!-- Skill Heading -->
-
-                <!-- Frontend Skills Section -->
+                <h2 class="skill-heading">Skills & Technologies</h2>
                 <div class="skill-category">
                     <h3>Frontend</h3>
                     <div class="skills-container">
-                        <!-- Skill Card 1 (HTML) -->
                         <div class="skill-card">
                             <img src="./images/html5.svg" alt="HTML5 Icon" class="skill-icon">
                             <h3>HTML5</h3>
                         </div>
-
-                        <!-- Skill Card 2 (CSS) -->
                         <div class="skill-card">
                             <img src="./images/css3.svg" alt="CSS3 Icon" class="skill-icon">
                             <h3>CSS3</h3>
                         </div>
-
-                        <!-- Skill Card 3 (JavaScript) -->
                         <div class="skill-card">
-                            <img src="./images/javascript.svg" alt="JAVASCRIPT Icon" class="skill-icon">
+                            <img src="./images/javascript.svg" alt="JavaScript Icon" class="skill-icon">
                             <h3>JavaScript</h3>
                         </div>
                     </div>
                 </div>
 
-                <!-- Backend Skills Section -->
                 <div class="skill-category">
                     <h3>Backend</h3>
                     <div class="skills-container">
-                        <!-- Skill Card 2 (MySQL) -->
                         <div class="skill-card">
-                            <img src="./images/mysql.svg" alt="MYSQL Icon" class="skill-icon">
+                            <img src="./images/mysql.svg" alt="MySQL Icon" class="skill-icon">
                             <h3>MySQL</h3>
                         </div>
-
-
                     </div>
                 </div>
 
-                <!-- Tools & Others Section -->
                 <div class="skill-category">
                     <h3>Tools & Others</h3>
                     <div class="skills-container">
-                        <!-- Skill Card 1 (Git) -->
                         <div class="skill-card">
-                            <img src="./images/git.svg" alt="GIT Icon" class="skill-icon">
+                            <img src="./images/git.svg" alt="Git Icon" class="skill-icon">
                             <h3>Git</h3>
                         </div>
-
-                        <!-- Skill Card 2 (Figma) -->
                         <div class="skill-card">
-                            <img src="./images/figma.svg" alt="FIGMA Icon" class="skill-icon">
+                            <img src="./images/figma.svg" alt="Figma Icon" class="skill-icon">
                             <h3>Figma</h3>
                         </div>
-
-                        <!-- Skill Card 3 (Canva) -->
                         <div class="skill-card">
-                            <img src="./images/canva.svg" alt="CANVA Icon" class="skill-icon">
+                            <img src="./images/canva.svg" alt="Canva Icon" class="skill-icon">
                             <h3>Canva</h3>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--EXPERIENCE-->
         <section id="experience" class="experience">
             <h1 class="experience-heading">Work Experience</h1>
             <div class="card-container">
                 <div class="experience-card">
-                    <!-- Front Side (Visible initially) -->
                     <div class="front">
                         <img src="./images/lifestyle.svg" alt="Lifestyle Icon" class="lifestyle-icon">
-                        <h3><u>Retail Cashier</u> - Lifestyle International Pvt. Ltd.</h3>
+                        <h3><u>Backend Support Engineer</u> - Lifestyle International Pvt. Ltd.</h3>
                         <p class="date">December 2022 – July 2023</p>
                         <ul>
-                            <li class="li">Managed daily sales transactions and inventory management.</li>
-                            <li class="li">Provided excellent customer service and maintained strong customer
-                                relationships.</li>
-                            <li class="li">Developed strong communication and teamwork skills in a fast-paced
-                                environment.</li>
+                            <li class="li">Managed backend POS database operations using SQL for inventory.</li>
+                            <li class="li">Resolved cashier-level issues (product errors, discount mismatches) through
+                                backend support.</li>
+                            <li class="li">Coordinated with cashier and operations teams for smooth store operations.
+                            </li>
                         </ul>
                     </div>
-
-                    <!-- Back Side (Behind the front) -->
                     <div class="back">
                         <div class="back-content">
                             <h2 class="achievement-heading">Achievement</h2>
-                            <img src="./images/lifestyle-certificate.jpg" alt="Certificate" class="certificate-icon">
+                            <img src="./images/lifestyle-certificate.jpg" alt="Lifestyle Certificate"
+                                class="certificate-icon">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--CONTACT-->
+        <section id="projects" class="projects">
+            <h1 class="projects-heading">My Projects</h1>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/movrev.png" alt="Portfolio Website Project Screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Movie Review Website</h3>
+                        <p>A responsive personal website built with HTML, CSS, and JavaScript to showcase my
+                            skills.</p>
+                        <div class="project-links">
+                            <a href="https://ankitbadoni7.github.io/Movie_Review/index.html" class="project-btn"
+                                target="a_blank">View
+                                Project</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/behanceprofile.png" alt="E-commerce Website Project Screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Graphic Desgin</h3>
+                        <p>Explore my creative graphic design works.
+                            Where I showcase UI/UX designs and posters.</p>
+                        <div class="project-links">
+                            <a href="https://www.behance.net/ankitbadoni3/projects" class="project-btn"
+                                target="a_blank">View Project</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
 
         <section class="contact-section" id="contact">
             <div class="contact-container">
                 <h2>Contact Me ✉️</h2>
                 <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
                 <form action="https://api.web3forms.com/submit" method="POST"
-                    data-message-success="submitted, Thanks for your message"> <!--250/month submissions-->
-
+                    data-message-success="submitted, Thanks for your message">
                     <input type="hidden" name="access_key" value="dd5ae083-9315-4441-8b6c-a922d4ce0526">
-
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
@@ -240,27 +245,22 @@
             </div>
         </section>
 
-
         <footer>
-            <div class="logo">
-                AB
-            </div>
+            <div class="logo">AB</div>
             <div class="footer-socials items-center">
-                <a href="https://www.linkedin.com/in/ankitbadoni7/" target="_blank"><img src="./images/linkedin.svg"
-                        alt=""></a>
-                <a href="https://github.com/ankitbadoni7" target="_blank"><img src="./images/github.svg" alt=""></a>
-                <a href="https://www.instagram.com/mr.ab.in?igsh=MTdhd2ZvOXF0cmo2ZA%3D%3D" target="_blank"><img
-                        src="./images/instagram.svg" alt="" width="50rem"></a>
-                <a href="https://www.behance.net/ankitbadoni3/projects" target="_blank"><img src="./images/behance.svg"
-                        alt=""></a>
+                <a href="https://www.linkedin.com/in/ankitbadoni7/" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/linkedin.svg" alt="LinkedIn Icon"></a>
+                <a href="https://github.com/ankitbadoni7" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/github.svg" alt="GitHub Icon"></a>
+                <a href="https://www.instagram.com/mr.ab.in?igsh=MTdhd2ZvOXF0cmo2ZA%3D%3D" target="_blank"
+                    rel="noopener noreferrer"><img src="./images/instagram.svg" alt="Instagram Icon" width="50rem"></a>
+                <a href="https://www.behance.net/ankitbadoni3/projects" target="_blank" rel="noopener noreferrer"><img
+                        src="./images/behance.svg" alt="Behance Icon"></a>
             </div>
-            <div class="copyright">
-                made by ankit badoni
-            </div>
+            <div class="copyright">made by ankit badoni</div>
         </footer>
     </div>
 
-    </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
