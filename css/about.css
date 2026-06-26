@@ -1,4 +1,7 @@
-
+:root{
+    --timeline-left: 18px;
+    --timeline-padding: 60px;
+}
 /* ===== ABOUT SECTION ===== */
 .about{
     position: relative;
@@ -1091,54 +1094,249 @@ background-size: 120px 120px;
         padding-right: 60px;
     }
 
-    
-   .exp_card{
+ /* ==========================================================
+   EXPERIENCE CARD - MOBILE ONLY
+========================================================== */
 
-        position: fixed;
+.exp_card{
 
-        top: 48%;
-        left: 50%;
+    position: fixed;
 
-        transform: translate(-50%, -50%) scale(0.95);
+    top: 50%;
+    left: 50%;
 
-        width: min(90%, 650px);
-        min-height: clamp(450px, 65vh, 500px);
-        z-index: 999;
+    transform: translate(-50%, -50%) scale(.95);
 
-    }
+    width: 92%;
+    max-width: 480px;
 
-    .exp_card.active{
-        transform: translate(-50%, -50%) scale(1);
-    }
+    max-height: 85vh;
+    overflow-y: auto;
 
-    .exp_header{
-        flex-direction: column;
+    padding: 22px 20px;
 
-        align-items: flex-start;
+    border-radius: 18px;
 
-        gap: 15px;
-    }
+    z-index: 999;
+}
 
-    .exp_logo img{
-        max-width: 140px;
-    }
+.exp_card.active{
+    transform: translate(-50%, -50%) scale(1);
+}
 
-    .exp_title{
-        font-size: clamp(1.5rem, 4vw, 2rem);
-    }
+/* title */
 
-    .exp_info h3{
-        font-size: clamp(1rem, 2vw, 1.3rem);
-    }
+.exp_title{
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+}
 
-    .exp_info h4,
-    .exp_info .exp_date{
-        font-size: clamp(0.9rem, 1.8vw, 1rem);
-    }
+.exp_divider{
+    margin: 10px 0 24px;
+}
 
-    .exp_list li{
-        font-size: clamp(0.9rem, 1.7vw, 1rem);
-    }
+/* ==========================================================
+   LINKEDIN STYLE TIMELINE
+========================================================== */
+
+.career_timeline{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0;
+
+    position: relative;
+}
+
+/* timeline */
+
+.career_timeline::before{
+
+    content: "";
+
+    position: absolute;
+
+    left: 17px;
+    top: 18px;
+    bottom: 18px;
+
+    width: 2px;
+
+    background: rgba(0,255,213,.45);
+
+    box-shadow: 0 0 12px rgba(0,255,213,.35);
+}
+
+/* ==========================================================
+   EXPERIENCE CARD
+========================================================== */
+
+.career_item{
+
+    position: relative;
+
+    width: 100%;
+
+    padding-left: 60px;
+    padding-bottom: 35px;
+
+    text-align: left;
+}
+
+/* glowing node */
+
+.career_item::before{
+
+    content: "";
+
+    position: absolute;
+
+    left: 10px;
+    top: 18px;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: #00ffd5;
+
+    border: 3px solid #081214;
+
+    box-shadow:
+        0 0 12px #00ffd5,
+        0 0 22px rgba(0,255,213,.45);
+}
+
+/* logo */
+
+.career_item img{
+
+    width: 70px;
+    max-width: 70px;
+
+    margin-bottom: 14px;
+}
+
+.career_item h3{
+
+    font-size: 1rem;
+
+    white-space: normal;
+
+    margin-bottom: 4px;
+}
+
+.career_item h4{
+
+    font-size: .95rem;
+
+    margin-bottom: 4px;
+}
+
+.career_item span{
+
+    font-size: .82rem;
+
+    margin-bottom: 12px;
+}
+
+.career_item ul{
+
+    margin-top: 12px;
+
+    padding-left: 18px;
+}
+
+.career_item li{
+
+    font-size: .88rem;
+
+    line-height: 1.5;
+
+    margin-bottom: 8px;
+}
+/* ==========================================================
+   MCA CARD
+========================================================== */
+
+.career_middle{
+
+    position: relative;
+
+    width: 100%;
+
+    padding-left: var(--timeline-padding);
+    padding-bottom: 45px;
+}
+
+/* Glowing Dot */
+
+.career_middle::before{
+
+    content: "";
+
+    position: absolute;
+
+    left: calc(var(--timeline-left) + 13px);
+    top: 18px;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: #00ffd5;
+
+    border: 3px solid #081214;
+
+    box-shadow:
+        0 0 12px #00ffd5,
+        0 0 22px rgba(0,255,213,.45);
+}
+
+/* Hide Horizontal Line */
+
+.career_line{
+    display: none;
+}
+
+/* MCA Card */
+
+.career_mca{
+
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.career_mca h3{
+
+    font-size: 1rem;
+}
+
+.career_mca p{
+
+    font-size: .9rem;
+}
+
+.career_mca span{
+
+    font-size: .82rem;
+}
+
         .capsule{
             top: clamp(20px, 2vw, 80px);
             right: clamp(12px, 3vw, 50px);
