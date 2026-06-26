@@ -1,0 +1,107 @@
+/* ===== ROOT VARIABLES ===== */
+:root {
+  --color-primary: #2EE6D6;
+
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+}
+
+
+/* ===== CSS RESET ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ===== HTML / BODY BASE ===== */
+html {
+  scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+    background:  #020A0C ;
+}
+
+
+
+/* ===== MEDIA DEFAULT ===== */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  
+}
+
+
+/* ===== FORM ELEMENTS ===== */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* ===== LINK RESET ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ===== LIST RESET ===== */
+ul,
+ol {
+  list-style: none;
+}
+
+#menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    z-index: 999;
+
+    transition: top 0.6s ease, left 0.6s ease, transform 0.6s ease;
+}
+
+#menu.scrolled {
+    top: 20px;
+    right: 30px;
+    left: auto;
+    transform: translate(0, 0);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px) scale(0.96);
+
+  /* glass-friendly blur reveal */
+  filter: blur(10px);
+
+  /* smooth premium easing */
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+
+  will-change: opacity, transform, filter;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}

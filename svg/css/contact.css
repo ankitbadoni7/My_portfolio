@@ -1,0 +1,1036 @@
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact_section{
+    width: 100%;
+    max-height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    padding: 40px 0 100px;
+    background:
+    linear-gradient(
+    315deg,
+    #020A0C 0%,
+    #03181C 30%,
+    #0A3A42 65%,
+    #020A0C 100%
+    );
+    border-top: 1px solid rgba(0, 255, 255, 0.28);
+    box-shadow:
+    0 5px 30px rgba(0,0,0,1);
+    z-index: 1;
+   
+}
+
+.contact_section::before{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+   background-image: url("../images/noise.webp");
+
+    opacity: 0.025;
+
+    pointer-events: none;
+}
+
+
+/* ===== BACKGROUND TEXT ===== */
+
+.contact_bg_text{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 30%);
+
+    font-size: 15rem;
+    letter-spacing: 20px;
+    font-weight: 400;
+
+    display: flex;
+    gap: 12px;
+
+    z-index: 1;
+
+    font-family: var(--font-heading);
+    pointer-events: none;
+
+    line-height: 0.8;
+    margin: 0;
+    padding: 0;
+}
+.contact_bg_text span{
+    filter: blur(0.7px);
+}
+
+.contact_bg_text span:nth-child(1){
+    color: rgba(255,255,255,0.07);
+    
+}
+
+.contact_bg_text span:nth-child(2){
+    color: rgba(255,255,255,0.3);
+  
+}
+
+.contact_container{
+    width: 78%;
+    height: 78vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 40px 50px;
+}
+
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.contact_left{
+    width: 50%;
+    height: 105%;
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 22px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow:
+    0 0 25px rgba(0,0,0,0.5),
+    inset 0 0 20px rgba(255,255,255,0.02);
+    z-index: 5;
+     transform: translate(6px, 85px);
+    }
+
+
+
+/* TOP ICON */
+
+.contact_top_icon{
+    width: 90px;
+    height: 70px;
+}
+
+.contact_top_icon img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+/* FORM */
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact_form input,
+.contact_form textarea{
+    width: 100%;
+
+    background: rgba(255,255,255,0.03);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    outline: none;
+
+    color: white;
+
+    border-radius: 16px;
+
+    padding: 16px 18px;
+
+    font-size: 0.95rem;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+    inset 0 0 18px rgba(0,255,255,0.04),
+    0 0 15px rgba(0,0,0,0.25);
+}
+
+.contact_form input{
+    height: 56px;
+}
+
+.contact_form textarea{
+    height: 150px;
+    resize: none;
+}
+
+.contact_form input::placeholder,
+.contact_form textarea::placeholder{
+    color: rgba(255,255,255,0.55);
+}
+
+.contact_form input:focus,
+.contact_form textarea:focus{
+    border-color: rgba(0,255,255,0.4);
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,0.12),
+    inset 0 0 12px rgba(0,255,255,0.06);
+}
+
+/* BUTTON */
+
+.contact_form button{
+    width: 100%;
+    height: 58px;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    border-radius: 18px;
+
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+
+    background: rgba(0, 247, 255, 0.08);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.35s ease;
+
+    box-shadow:
+    0 0 18px rgba(0,0,0,0.3),
+    inset 0 0 12px rgba(255,255,255,0.04);
+}
+
+.contact_form button{
+    position: relative;
+    overflow: hidden;
+}
+
+.contact_form button::before{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background:
+    linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.45),
+    transparent
+    );
+
+    transform: skewX(-25deg);
+
+    transition: 0.7s ease;
+
+    pointer-events: none;
+}
+
+.contact_form button:hover{
+    transform: translateY(-2px);
+
+    border-color: rgba(0,255,255,0.35);
+
+    box-shadow:
+    0 0 22px rgba(0,255,255,0.15);
+}
+
+.contact_form button:hover::before{
+    left: 150%;
+}
+
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.contact_right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    z-index: 5;
+    width: 30%;
+
+    position: relative;
+    top: 130px;
+    left: 78px;
+}
+
+/* TEXT */
+
+.contact_text{
+    color: rgba(255,255,255,0.72);
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    max-width: 500px;
+}
+
+/* ===== SOCIALS ===== */
+
+.contact_socials{
+    display: inline-grid;
+
+    grid-template-columns: repeat(3, max-content);
+
+    gap: 30px 30px;
+}
+
+/* GMAIL GLOW */
+
+.social_icon.gmail::after{
+    box-shadow: inset 0 0 25px rgba(255, 70, 70, 0.30);
+}
+
+.social_icon{
+    display: flex;
+
+    flex-shrink: 0;
+
+    outline: 1px solid transparent;
+}
+
+
+/* ===== DATE TIME ===== */
+
+.contact_datetime{
+    color: rgba(255,255,255,0.72);
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    font-size: 0.92rem;
+    letter-spacing: 1px;
+}
+
+.contact_datetime p{
+    margin: 0;
+}
+
+
+/* =========================================
+   THANKS SECTION
+========================================= */
+
+.thanks_section{
+   
+    width: 100%;
+    max-height: 150px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px 30px;
+  background: radial-gradient(
+    circle at center,
+    rgba(46, 230, 214, 0.4) 0%,
+    rgba(46, 230, 214, 0.3) 25%,
+    rgba(46, 230, 214, 0.1) 50%,
+    rgba(46, 230, 214, 0.05) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+border-top: 1px solid rgba(0,255,255,0.12);
+}
+
+
+/* ===== NOISE ===== */
+
+.thanks_section::before{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../images/noise.webp");
+    background-size: cover;
+
+    opacity: 0.05;
+
+    mix-blend-mode: overlay;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   HOME BUTTON
+========================================= */
+
+.home_btn{
+    width: 50px;
+    height: 50px;
+
+   position: absolute;
+    top: 70px;
+    right: 50px;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    margin-bottom: 15px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    outline: 1px solid transparent;
+
+    overflow: hidden;
+
+    transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    background 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+/* =========================================
+   GLOW LAYER
+========================================= */
+
+.home_btn::before{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    border-radius: inherit;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(0,255,255,0.18),
+    transparent 70%);
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+}
+
+
+/* =========================================
+   SHINE EFFECT
+========================================= */
+
+.home_btn::after{
+    content: "";
+
+    position: absolute;
+
+    top: -120%;
+    left: -40%;
+
+    width: 45%;
+    height: 300%;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.35),
+        transparent
+    );
+
+    transform: rotate(25deg);
+
+    opacity: 0;
+
+    transition:
+    left 0.7s ease,
+    opacity 0.3s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.home_btn:hover{
+    transform: translateY(-6px);
+
+    border-color: rgba(0,255,255,0.35);
+
+    background: rgba(255,255,255,0.07);
+
+    box-shadow:
+    0 0 25px rgba(0,255,255,0.14),
+    inset 0 0 20px rgba(255,255,255,0.03);
+}
+
+
+.home_btn:hover::before{
+    opacity: 1;
+}
+
+
+.home_btn:hover::after{
+    left: 130%;
+    opacity: 1;
+}
+
+
+/* =========================================
+   ACTIVE
+========================================= */
+
+.home_btn:active{
+    transform: scale(0.95);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.home_btn img{
+    width: 22px;
+
+    position: relative;
+    z-index: 2;
+
+    opacity: 0.82;
+
+    transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+
+.home_btn:hover img{
+    transform: scale(1.08);
+
+    opacity: 1;
+}
+
+/* =========================================
+   BIG TEXT
+========================================= */
+
+.thanks_text{
+    position: relative;
+    z-index: 2;
+    font-weight: 300;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 4rem;
+
+    text-transform: uppercase;
+    letter-spacing: 20px;
+
+    color: rgba(255, 255, 255, 0.4);
+
+    text-align: center;
+
+    line-height: 1;
+
+    text-shadow:
+    0 0 12px rgba(16, 16, 16, 0.979);
+
+}
+
+
+
+/* =========================================
+   COPYRIGHT
+========================================= */
+
+.copyright{
+    position: relative;
+    z-index: 2;
+    margin-top: 14px;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: rgba(255,255,255,0.3);
+    text-align: center;
+}
+
+/* =========================================
+   GLASS RECTANGLE
+========================================= */
+
+.glass_rect{
+    position: absolute;
+
+    top: 60px;
+    left: 14%;
+
+    
+
+    width: 70%;
+    height: 40px;
+
+    border-radius: 100px;
+
+    background: rgba(255,255,255,0.037);
+
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow:
+    0 0 7px rgba(0,0,0,1);
+
+    z-index: 10;
+
+    overflow: hidden;
+
+    cursor: grab;
+}
+
+
+/* =========================================
+   REAL GLASS SHINE
+========================================= */
+
+.glass_rect::before{
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -150%;
+
+    width: 60%;
+    height: 100%;
+
+    background:
+    linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255,255,255,0.15) 40%,
+        rgba(255,255,255,0.6) 50%,
+        rgba(255,255,255,0.15) 60%,
+        transparent 100%
+    );
+
+    filter: blur(6px);
+
+    transform: skewX(-20deg);
+
+    animation: glassShine 4s linear infinite;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   SHINE LOOP
+========================================= */
+
+@keyframes glassShine{
+
+    0%{
+        left: -150%;
+    }
+
+    100%{
+        left: 150%;
+    }
+}
+
+
+/* =========================================
+   ACTIVE
+========================================= */
+
+.glass_rect:active{
+    cursor: grabbing;
+}
+
+
+
+/* =========================================
+   CONTACT RESPONSIVE
+========================================= */
+
+
+@media (min-width: 1001px) and (max-width: 1400px){
+
+    /* =====================================
+       CONTACT SECTION
+    ===================================== */
+
+    .contact_section{
+        padding: clamp(50px, 5vw, 70px) 0
+                 clamp(60px, 6vw, 90px);
+
+        max-height: none;
+    }
+
+    /* bg text */
+
+    .contact_bg_text{
+        font-size: clamp(7rem, 10vw, 10rem);
+
+        letter-spacing: clamp(8px, 1vw, 14px);
+
+        gap: 0;
+
+        top: 0;
+
+        transform: translate(-50%, 18%);
+    }
+
+    /* container */
+
+    .contact_container{
+        width: min(92%, 1200px);
+
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: clamp(30px, 4vw, 60px);
+
+        padding:
+        clamp(30px, 3vw, 45px)
+        clamp(20px, 3vw, 40px);
+    }
+
+    /* left */
+
+    .contact_left{
+        width: 55%;
+
+        height: auto;
+
+        transform: translateY(clamp(30px, 4vw, 65px));
+
+        padding:
+        clamp(20px, 2vw, 28px);
+    }
+
+    .contact_top_icon{
+        width: clamp(70px, 6vw, 90px);
+        height: auto;
+
+        margin-bottom: 18px;
+    }
+
+    /* form */
+
+    .contact_form{
+        gap: clamp(14px, 1.6vw, 20px);
+    }
+
+    .contact_form input{
+        height: clamp(52px, 5vw, 58px);
+    }
+
+    .contact_form textarea{
+        height: clamp(140px, 14vw, 180px);
+    }
+
+    .contact_form input,
+    .contact_form textarea{
+        font-size: clamp(0.85rem, 1vw, 1rem);
+
+        padding:
+        clamp(14px, 1.5vw, 18px);
+    }
+
+    .contact_form button{
+        height: clamp(52px, 5vw, 60px);
+
+        font-size: clamp(0.9rem, 1vw, 1rem);
+    }
+
+    /* right */
+
+    .contact_right{
+        width: 38%;
+
+        top: clamp(60px, 7vw, 110px);
+        left: 0;
+
+        gap: clamp(20px, 2vw, 30px);
+    }
+
+    .contact_text{
+        font-size: clamp(1rem, 1.5vw, 1.3rem);
+
+        line-height: 1.8;
+
+        letter-spacing: 1px;
+    }
+
+    /* socials */
+
+    .contact_socials{
+        gap:
+        clamp(18px, 2vw, 28px)
+        clamp(18px, 2vw, 28px);
+    }
+
+    /* datetime */
+
+    .contact_datetime{
+        font-size: clamp(0.8rem, 1vw, 0.92rem);
+    }
+
+    /* =====================================
+       THANKS SECTION
+    ===================================== */
+
+    .thanks_section{
+        padding:
+        clamp(35px, 4vw, 50px)
+        20px
+        clamp(25px, 3vw, 35px);
+
+        max-height: none;
+    }
+
+    /* thanks text */
+
+    .thanks_text{
+        font-size: clamp(2.5rem, 4vw, 3.5rem);
+
+        letter-spacing: clamp(8px, 1vw, 16px);
+
+        color: rgba(255,255,255,0.5);
+    }
+
+    /* copyright */
+
+    .copyright{
+        font-size: clamp(0.75rem, 1vw, 0.95rem);
+
+        letter-spacing: clamp(2px, 0.5vw, 4px);
+    }
+
+    /* home button */
+
+    .home_btn{
+        width: clamp(42px, 4vw, 50px);
+        height: clamp(42px, 4vw, 50px);
+
+        top: clamp(20px, 2vw, 40px);
+        right: clamp(20px, 3vw, 45px);
+    }
+
+    .home_btn img{
+        width: clamp(18px, 2vw, 22px);
+    }
+
+    /* glass */
+
+    .glass_rect{
+        width: min(60%, 900px);
+
+        height: clamp(20px, 3vw, 40px);
+
+        top: clamp(70px, 5vw, 75px);
+
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+}
+@media (max-width: 1000px){
+
+    .contact_section{
+        max-height: none;
+
+        padding: 70px 0 50px;
+    }
+
+    /* background text */
+
+    .contact_bg_text{
+        font-size: 5rem;
+
+        letter-spacing: 6px;
+        gap: 0;
+        top: 20px;
+
+        transform: translateX(-50%);
+    }
+
+    /* container */
+
+    .contact_container{
+        width: 100%;
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 40px;
+
+        padding: 40px 20px 20px;
+    }
+
+    /* left */
+
+    .contact_left{
+        width: 100%;
+        height: auto;
+
+        transform: none;
+
+        padding: 20px 18px;
+    }
+
+    .contact_top_icon{
+        width: 70px;
+        height: 55px;
+
+        margin-bottom: 15px;
+    }
+
+    /* form */
+
+    .contact_form{
+        gap: 15px;
+    }
+
+    .contact_form input{
+        height: 52px;
+    }
+
+    .contact_form textarea{
+        height: 130px;
+    }
+
+    .contact_form input,
+    .contact_form textarea{
+        font-size: 14px;
+
+        padding: 14px 16px;
+    }
+
+    .contact_form button{
+        height: 54px;
+
+        font-size: 15px;
+    }
+
+    /* right */
+
+    .contact_right{
+        width: 100%;
+
+        top: 0;
+        left: 0;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 25px;
+    }
+
+    .contact_text{
+        font-size: 1.05rem;
+
+        line-height: 1.8;
+
+        letter-spacing: 1px;
+    }
+
+    /* socials */
+
+    .contact_socials{
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 22px;
+    }
+
+    /* datetime */
+
+    .contact_datetime{
+        align-items: center;
+
+        font-size: 0.85rem;
+    }
+
+    /* thanks section */
+
+    .thanks_section{
+        max-height: none;
+        padding: 20px 15px 25px;
+    }
+
+    .thanks_text{
+        font-size: 1.5rem;
+        margin-top: 45px;
+        letter-spacing: 3px;
+        color: rgba(255,255,255,0.6);
+    }
+
+    .copyright{
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+        margin-top: 10px;
+    }
+
+    /* home button */
+
+    .home_btn{
+        width: 42px;
+        height: 42px;
+
+        top: 10px;
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        right: auto;
+        z-index: 50;
+    }
+    .home_btn img{
+        width: 18px;
+    }
+
+    /* glass rect */
+
+    .glass_rect{
+        width: 95%;
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        top: 60px;
+        z-index: 1;
+        height: 32px;
+      
+    }
+
+}
