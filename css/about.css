@@ -510,7 +510,7 @@ background-size: 120px 120px;
 .career_line_left{
     margin-right: 12px; 
 }
-.carrer_line_right{
+.career_line_right{
     margin-left: 12px; 
 }
 
@@ -900,10 +900,13 @@ background-size: 120px 120px;
     color: #ffffff;
 }
 
-@media (min-width:1000px) and (max-width:1300px){
-    .about{
-        padding: 0 20px 0;
-    }
+@media (min-width:1000px) and (max-width:1450px){
+
+.about{
+    padding: 0 20px 20px;
+}
+
+
 
     /* container stays row */
     .about_container{
@@ -929,6 +932,11 @@ background-size: 120px 120px;
 
     .about_footer{
         gap: 30px;
+        
+    }
+    .about_btn .btn{
+        padding: 0.4rem 1.5rem;
+        font-size: 0.9rem;
     }
 
     .social_icon{
@@ -954,6 +962,58 @@ background-size: 120px 120px;
     .about_image_wrap{
         height: 75vh;
     }
+
+.exp_card {
+    position: absolute;
+    width: 120%;
+    max-height: 330px;
+    padding: 14px 28px;
+}
+
+
+.career_timeline{
+       gap: 10px;
+}
+
+
+
+/* MCA CARD */
+
+.career_mca{
+    flex: 0 0 100px;   
+    width: 50px;
+    padding: 4px 2px;
+
+}
+
+
+.career_mca h3{
+   
+    font-size: .9rem;
+}
+
+.career_mca p{
+    font-size: .7rem;
+}
+
+.career_mca span{
+    font-size: .6rem;
+   
+}
+.career_line_left{
+    margin-right: 12px; 
+}
+
+
+/* TIMELINE */
+
+.career_line{
+    width: 20px;
+   
+}
+
+
+    
 
 }
 
