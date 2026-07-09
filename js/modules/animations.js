@@ -80,3 +80,69 @@ gsap.to(".tech-bubble",{
     stagger:0.3
 });
 
+// ======================================
+// ABOUT SECTION
+// ======================================
+
+const aboutTL = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".about",
+        start: "top 72%",
+        toggleActions: "play none none none",
+        once: true
+    },
+    defaults: {
+        ease: "power3.out",
+        duration: 0.8
+    }
+});
+
+aboutTL
+
+// Title
+.from(".about_title", {
+    opacity: 0,
+    y: 35
+})
+
+// Paragraphs
+.from(".about_text > p", {
+    opacity: 0,
+    y: 25,
+    stagger: 0.18
+}, "-=0.45")
+
+// Social Icons
+.fromTo(".social_icon",
+{
+    opacity: 0,
+    y: 20,
+    scale: 0.9
+},
+{
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    duration: 0.5,
+    stagger: 0.08,
+    clearProps: "opacity,transform"
+}, "-=0.35")
+
+// Experience Button
+.from(".about_btn", {
+    opacity: 0,
+    y: 20
+}, "-=0.30")
+
+// Glass Rectangle
+.from(".about_glass_bg", {
+    opacity: 0,
+    duration: 0.7
+}, "-=0.55")
+
+// Image
+.from(".about_image_wrap", {
+    opacity: 0,
+    scale: 0.95,
+    duration: 0.7
+}, "-=0.35");
