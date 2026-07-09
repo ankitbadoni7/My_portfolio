@@ -6,6 +6,7 @@ import "./modules/download.js";
 import "./modules/about.js";
 import "./modules/project.js";
 import "./modules/contact.js";
+import "./modules/animations.js"
 
 // ===== DOWNLOAD CV BUTTON =====
 const cvBtn = document.getElementById("cvBtn");
@@ -108,3 +109,4 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(".reveal").forEach(el => {
   observer.observe(el);
 });
+

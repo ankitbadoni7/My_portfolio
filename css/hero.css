@@ -358,6 +358,8 @@
   z-index: 10;
   pointer-events: auto;
   overflow: hidden;
+  opacity:0;
+  visibility:hidden;
 }
 
 /* REAL GLASS SHINE */
